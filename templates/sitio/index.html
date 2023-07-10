@@ -1,0 +1,118 @@
+{% include 'sitio/cabecera.html' %}
+
+    <div class="p-5 mb-4 bg-light rounded-3">
+        <div class="container">
+            <h1 class="display-3"> Tur@med</h1>
+            <p class="col-md-8 fs-4">Bienvenido al mundo de Turismo</p>
+        <button class="btn btn-primary btn-lg" type="button">Mas información</button>
+        </div>
+    </div>
+
+<!-- Carousel -->
+
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/slider.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/carousel.css') }}">
+        <section class="destacados container">
+
+            <div class="slider">
+                <img src="{{ url_for('static', filename='/img/img-paquetes/barcelona2x8.jpg')}}" alt="Imagen 1">
+                <img src="{{ url_for('static', filename='/img/img-paquetes/iguazu2x8.jpg')}}" alt="Imagen 2">
+                <img src="{{ url_for('static', filename='/img/img-paquetes/mendoza2x8.jpg')}}" alt="Imagen 3">
+                <img src="{{ url_for('static', filename='/img/img-paquetes/cancun2x8.jpg')}}" alt="Imagen 4">
+            </div>
+
+
+<!-- Separacion -->
+
+<div class="p-5 mb-4 bg-light rounded-3">
+    <div class="container">
+        <h1 class="display-3"> Paquetes</h1>
+        <p class="col-md-8 fs-4">Bienvenido al mundo de Turismo</p>
+
+    </div>
+    </div>
+
+            <!-- Introduccion a Paquetes -->
+
+            <style>
+                .img-icon {
+                    border: 2px solid blue;
+                    border-radius: 10px;
+                    padding-bottom: 20px;
+                    transform: scale(0.7);
+                }
+
+                .centrar-h3 {
+                    text-align: center;
+                }
+            </style>
+
+
+<div class="row">
+    <div class="col-md-4">
+        <div class="card">            
+            <h3 class="card-title centrar-h3" >Local</h3>
+            <img class="img-icon" 
+            src="{{ url_for('static', filename='/img/img-categorias/argentina.png')}}" alt="Argentina">
+            <div class="card-body">
+                <h4 class="card-title">Bariloche</h4>
+                <h4 class="card-title">Puerto Madryn</h4>
+                <h4 class="card-title">Mendoza</h4>
+                    <div class="p-3">
+            </div>
+                <p class="card-text">
+                    <a name="" id="" class="btn btn-primary" href="/paquetel" 
+                    role="button">Ver paquete local</a>
+
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card">            
+            <h3 class="card-title centrar-h3" >Regional</h3>
+            <img class="img-icon" 
+            src="{{ url_for('static', filename='/img/img-categorias/brasil.png')}}" alt="Brasil">
+            <div class="card-body">
+                <h4 class="card-title">Rio de Janeiro</h4>
+                <h4 class="card-title">Sao Paulo</h4>
+                <h4 class="card-title">Florianopolis</h4>
+                    <div class="p-3">
+            </div>
+                <p class="card-text">
+                    <a name="" id="" class="btn btn-primary" href="/paqueter" 
+                    role="button">Ver paquete regional</a>
+
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card">            
+            <h3 class="card-title centrar-h3" >Internacional</h3>
+            <img class="img-icon" 
+            src="{{ url_for('static', filename='/img/img-categorias/japon.png')}}" alt="Japon">
+            <div class="card-body">
+                <h4 class="card-title">Tokio</h4>
+                <h4 class="card-title">Okinawa</h4>
+                <h4 class="card-title">Nagasaki</h4>
+                    <div class="p-3">
+            </div>
+                <p class="card-text">
+                    <a name="" id="" class="btn btn-primary" href="/paquetei" 
+                    role="button">Ver paquete internacional</a>
+
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+    
+    
+
+        </section>
+
+
+{% include 'sitio/pie.html' %}
